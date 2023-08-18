@@ -9,23 +9,64 @@
 
     <TextView
         android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Testing App"
-        android:textSize="20sp" />
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="#FFFFFF"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textColor="#6200ED"
+        android:textSize="34sp"
+        app:lineHeight="50px" />
 
-    <Button
-        android:id="@+id/button"
+<!--    <Button-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Login"-->
+<!--        android:onClick="handleClick"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:onClick="displayMsg"-->
+<!--        android:text="@string/msg" />-->
+
+
+    <EditText
+        android:id="@+id/t1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:onClick="handleClick"/>
+        android:ems="10"
+        android:inputType="number" />
 
-    <Button
-        android:id="@+id/button2"
+    <EditText
+        android:id="@+id/t2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="displayMsg"
-        android:text="@string/msg" />
+        android:ems="10"
+        android:inputType="number" />
+
+
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sumFun"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="subFun"
+        android:text="Substract" />
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="mulFun"
+        android:text="Mulitply" />
 
 </LinearLayout>
