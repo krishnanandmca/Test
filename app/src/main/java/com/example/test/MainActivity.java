@@ -69,3 +69,86 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
+
+//8-9-23
+//method1
+
+// package com.example.newpro8;
+
+// import androidx.appcompat.app.AppCompatActivity;
+
+// import android.os.Bundle;
+// import android.view.View;
+// import android.widget.Button;
+// import android.widget.Toast;
+
+// public class MainActivity extends AppCompatActivity {
+//     Button b,b2;
+
+//     @Override
+//     protected void onCreate(Bundle savedInstanceState) {
+//         super.onCreate(savedInstanceState);
+//         setContentView(R.layout.activity_main);
+//         b = findViewById(R.id.button);
+//         b2 = findViewById(R.id.button2);
+//         b.setOnClickListener(new View.OnClickListener() {
+//             @Override
+//             public void onClick(View v) {
+//                 Toast.makeText(getApplicationContext(),"hi", Toast.LENGTH_LONG).show();
+//             }
+//         });
+
+//         b2.setOnClickListener(new View.OnClickListener() {
+//             @Override
+//             public void onClick(View v) {
+//                 Toast.makeText(getApplicationContext(),"another hi", Toast.LENGTH_LONG).show();
+//             }
+//         });
+
+
+
+//     }
+
+
+// }
+
+
+
+
+
+//method2
+// package com.example.newpro28;
+
+// import androidx.appcompat.app.AppCompatActivity;
+
+// import android.os.Bundle;
+// import android.view.View;
+// import android.widget.Button;
+// import android.widget.Toast;
+
+// public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+//     Button b1,b2;
+//     @Override
+//     protected void onCreate(Bundle savedInstanceState) {
+//         super.onCreate(savedInstanceState);
+//         setContentView(R.layout.activity_main);
+//         b1 = (Button)findViewById(R.id.b1);
+//         b2 = (Button)findViewById(R.id.b2);
+
+//         b1.setOnClickListener(this);
+//         b2.setOnClickListener(this);
+
+//     }
+
+//     @Override
+//     public void onClick(View v) {
+//         int click = v.getId();
+//         if(R.id.b1 == click){
+//             Toast.makeText(getApplicationContext(),"button1",Toast.LENGTH_LONG).show();
+//         }else if(R.id.b2 == click){
+//             Toast.makeText(getApplicationContext(),"button2",Toast.LENGTH_LONG).show();
+//         }
+//     }
+
+
+// }
